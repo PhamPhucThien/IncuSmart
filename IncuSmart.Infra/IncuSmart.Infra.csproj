@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistences\Mapper\" />
     <Folder Include="Persistences\Repository\Impl\" />
   </ItemGroup>
 

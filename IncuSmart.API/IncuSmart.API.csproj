@@ -24,12 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mappers\" />
-    <Folder Include="Responses\" />
-    <Folder Include="Requests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\IncuSmart.Application\IncuSmart.Application.csproj" />
     <ProjectReference Include="..\IncuSmart.Infra\IncuSmart.Infra.csproj" />
   </ItemGroup>
