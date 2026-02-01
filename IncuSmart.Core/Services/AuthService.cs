@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IncuSmart.Core.Domain
+namespace IncuSmart.Core.Services
 {
-    internal class Dummy
+    public class AuthService
     {
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IncuSmart.Application.Ports.Outbound
+namespace IncuSmart.Core.Domains
 {
-    internal class Dummy
+    public class Customer
     {
     }
 }

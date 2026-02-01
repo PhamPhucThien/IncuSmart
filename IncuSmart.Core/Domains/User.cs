@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IncuSmart.Core.Services
+namespace IncuSmart.Core.Domain
 {
-    internal class Dummy
+    public class Dummy
     {
     }
 }
