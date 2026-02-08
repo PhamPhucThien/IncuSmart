@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.App", "IncuSmart.App\IncuSmart.App.csproj", "{0BF65CA0-0A99-4F5A-BB3D-D94C6F17E82C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.App", "IncuSmart.App.csproj", "{0BF65CA0-0A99-4F5A-BB3D-D94C6F17E82C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.Core", "IncuSmart.Core\IncuSmart.Core.csproj", "{A954F612-04A9-4308-8973-D14961ED6E4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.Core", "..\IncuSmart.Core\IncuSmart.Core.csproj", "{A954F612-04A9-4308-8973-D14961ED6E4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.Infra", "IncuSmart.Infra\IncuSmart.Infra.csproj", "{8CE0CD0F-73BF-4D59-BECF-9E1DDE4FCE5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.Infra", "..\IncuSmart.Infra\IncuSmart.Infra.csproj", "{8CE0CD0F-73BF-4D59-BECF-9E1DDE4FCE5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.API", "IncuSmart.API\IncuSmart.API.csproj", "{96723D19-A998-4151-B2F6-4D9BBBD8D897}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncuSmart.API", "..\IncuSmart.API\IncuSmart.API.csproj", "{96723D19-A998-4151-B2F6-4D9BBBD8D897}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

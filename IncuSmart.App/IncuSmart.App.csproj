@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include=".github\workflows\dotnet-ci.yml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\IncuSmart.API\IncuSmart.API.csproj" />
     <ProjectReference Include="..\IncuSmart.Infra\IncuSmart.Infra.csproj" />
   </ItemGroup>
