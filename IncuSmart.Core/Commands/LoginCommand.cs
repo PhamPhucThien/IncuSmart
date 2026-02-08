@@ -1,4 +1,4 @@
-﻿namespace IncuSmart.Application.Commands
+﻿namespace IncuSmart.Core.Commands
 {
     public class LoginCommand
     {

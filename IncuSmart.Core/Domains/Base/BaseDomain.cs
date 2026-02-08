@@ -2,7 +2,7 @@
 {
     public class BaseDomain<TStatus>
     {
-        public long Id { get; set; }
+        public Guid Id { get; set; }
 
         public required TStatus Status { get; set; }
 

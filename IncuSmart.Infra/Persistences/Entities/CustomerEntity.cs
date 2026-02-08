@@ -3,7 +3,7 @@
     [Table("customers")]
     public class CustomerEntity : BaseEntity<BaseStatus>
     {
-        public long UserId { get; set; }
+        public Guid UserId { get; set; }
 
         public string? DeviceToken { get; set; }
 

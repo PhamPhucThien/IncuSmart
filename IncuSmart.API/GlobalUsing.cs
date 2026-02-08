@@ -4,7 +4,6 @@ global using IncuSmart.API.Mappers;
 global using IncuSmart.API.Requests;
 global using System.ComponentModel.DataAnnotations;
 global using System.Diagnostics.CodeAnalysis;
-global using IncuSmart.Application.Ports.Inbound;
-global using IncuSmart.Application.Commands;
+global using IncuSmart.Core.Ports.Inbound;
 global using IncuSmart.Core.Commands;
 global using Riok.Mapperly.Abstractions;

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IncuSmart.Core.Domains
+﻿namespace IncuSmart.Core.Domains
 {
     public class Customer : BaseDomain<BaseStatus>
     {
-        public long UserId { get; set; }
+        public Guid UserId { get; set; }
 
         public string? DeviceToken { get; set; }
 

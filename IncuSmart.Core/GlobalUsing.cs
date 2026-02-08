@@ -1,8 +1,11 @@
-﻿global using IncuSmart.Core.Domains.Base;
-global using IncuSmart.Application.Commands;
-global using IncuSmart.Core.Commands;
+﻿global using IncuSmart.Core.Commands;
 global using IncuSmart.Core.Domain;
-global using IncuSmart.Application.Ports.Inbound;
-global using IncuSmart.Application.Ports.Outbound;
+global using IncuSmart.Core.Domains.Base;
+global using IncuSmart.Core.Ports.Inbound;
+global using IncuSmart.Core.Ports.Outbound;
 global using IncuSmart.Core.Utils;
-global using BCrypt.Net;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using IncuSmart.Core.Domains;

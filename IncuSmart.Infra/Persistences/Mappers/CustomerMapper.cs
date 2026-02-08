@@ -1,4 +1,6 @@
-﻿namespace IncuSmart.Infra.Persistences.Mappers
+﻿using IncuSmart.Core.Domain;
+
+namespace IncuSmart.Infra.Persistences.Mappers
 {
     [Mapper]
     public partial class CustomerMapper
