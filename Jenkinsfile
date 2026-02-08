@@ -36,8 +36,10 @@ pipeline {
                 bat '''
                 %windir%\\system32\\inetsrv\\appcmd stop apppool /apppool.name:IncuSmartPool
 
-                rmdir /S /Q C:\\inetpub\\incusmart || echo not exist
-                mkdir C:\\inetpub\\incusmart
+                if not exist C:\\inetpub\\incusmart (
+                    mkdir C:\\inetpub\\incusmart
+                )
+
                 xcopy publish C:\\inetpub\\incusmart /E /I /Y
 
                 %windir%\\system32\\inetsrv\\appcmd start apppool /apppool.name:IncuSmartPool
