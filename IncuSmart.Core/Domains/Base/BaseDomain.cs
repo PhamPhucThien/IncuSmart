@@ -1,6 +1,6 @@
-﻿namespace IncuSmart.Infra.Persistences.Entities.Base
+﻿namespace IncuSmart.Core.Domains.Base
 {
-    public class BaseEntity<TStatus>
+    public class BaseDomain<TStatus>
     {
         public long Id { get; set; }
 

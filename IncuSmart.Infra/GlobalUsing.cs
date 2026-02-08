@@ -1,0 +1,10 @@
+﻿global using IncuSmart.Core.Domains.Base;
+global using IncuSmart.Infra.Persistences.Entities.Base;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using IncuSmart.Core.Domain;
+global using IncuSmart.Infra.Persistences.Entities;
+global using Riok.Mapperly.Abstractions;
+global using IncuSmart.Application.Ports.Outbound;
+global using IncuSmart.Infra.Persistences.Mapper;
+global using Microsoft.EntityFrameworkCore;
+global using IncuSmart.Core.Domains;

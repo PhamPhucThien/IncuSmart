@@ -1,10 +1,5 @@
-﻿using IncuSmart.Infra.Persistences.Entity;
+﻿using IncuSmart.Infra.Persistences.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IncuSmart.Infra.Persistences
 {
@@ -18,5 +13,12 @@ namespace IncuSmart.Infra.Persistences
         public DbSet<UserEntity> Users { get; set; } = null!;
 
         public DbSet<CustomerEntity> Customers { get; set; } = null!;
+
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder
+                .Properties<Enum>()
+                .HaveConversion<string>();
+        }
     }
 }

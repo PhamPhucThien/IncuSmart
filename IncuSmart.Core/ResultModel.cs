@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IncuSmart.Application.Mappers
+namespace IncuSmart.Core
 {
-    internal class Dummy
+    public abstract class ResultModel
     {
+        public string? Message;
     }
 }
