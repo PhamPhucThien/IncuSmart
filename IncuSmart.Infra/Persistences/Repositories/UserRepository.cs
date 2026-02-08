@@ -1,16 +1,17 @@
-﻿using IncuSmart.Application.Ports.Outbound;
-using IncuSmart.Infra.Persistences.Mapper;
-using Microsoft.EntityFrameworkCore;
+﻿using IncuSmart.Infra.Persistences.Mappers;
 
 namespace IncuSmart.Infra.Persistences.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        public readonly ApplicationDbContext _dbContext;
-        public static readonly UserMapper _userMapper = new();
-        public UserRepository(ApplicationDbContext dbContext)
+        private readonly ApplicationDbContext _dbContext;
+        private static readonly UserMapper _userMapper = new();
+        private static readonly CustomerMapper _customerMapper = new();
+        private readonly ICustomerRepository _customerRepository;
+        public UserRepository(ApplicationDbContext dbContext, ICustomerRepository customerRepository) 
         {
             _dbContext = dbContext;
+            _customerRepository = customerRepository;
         }
 
         public async Task<User?> FindByUserNameAndPasswordHashAndDeletedAtIsNull(string userName, string passwordHash)
@@ -31,10 +32,10 @@ namespace IncuSmart.Infra.Persistences.Repositories
             return entity != null ? _userMapper.ToDomain(entity) : null;
         }
 
-        public async Task<bool> Save(User user)
+        public async Task Add(User user)
         {
-            await _dbContext.AddAsync(_userMapper.ToEntity(user));
-            return await _dbContext.SaveChangesAsync() > 0;
+            UserEntity entity = _userMapper.ToEntity(user);
+            await _dbContext.AddAsync(entity);
         }
     }
 }

@@ -6,7 +6,7 @@
     {
         private static readonly AuthMapper _authMapper = new();
 
-        [HttpPost("/login")]
+        [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
             string? result = await _authUseCase.Login(_authMapper.RequestToLoginCommand(request));
@@ -33,7 +33,7 @@
             return FromResult(response);
         }
 
-        [HttpPost("/register")]
+        [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
             bool result = await _authUseCase.Register(_authMapper.RequestToRegisterCommand(request));

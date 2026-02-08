@@ -9,7 +9,7 @@
 
         public long? ModelId { get; set; }
 
-        public long? CustomerId { get; set; }
+        public Guid? CustomerId { get; set; }
 
         public DateTime? ActivatedAt { get; set; }
     }

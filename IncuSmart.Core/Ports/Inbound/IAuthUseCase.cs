@@ -1,7 +1,4 @@
-﻿using IncuSmart.Application.Commands;
-using IncuSmart.Core.Commands;
-
-namespace IncuSmart.Application.Ports.Inbound
+﻿namespace IncuSmart.Core.Ports.Inbound
 {
     public interface IAuthUseCase
     {

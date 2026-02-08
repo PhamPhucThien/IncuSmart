@@ -3,8 +3,8 @@
     [Table("sales_order_items")]
     public class SalesOrderItemEntity : BaseEntity<BaseStatus>
     {
-        public long OrderId { get; set; }
+        public Guid OrderId { get; set; }
 
-        public long IncubatorId { get; set; }
+        public Guid IncubatorId { get; set; }
     }
 }

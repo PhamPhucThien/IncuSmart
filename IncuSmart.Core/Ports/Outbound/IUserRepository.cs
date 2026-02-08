@@ -1,6 +1,4 @@
-﻿using IncuSmart.Core.Domain;
-
-namespace IncuSmart.Application.Ports.Outbound
+﻿namespace IncuSmart.Core.Ports.Outbound
 {
     public interface IUserRepository
     {
@@ -9,6 +7,6 @@ namespace IncuSmart.Application.Ports.Outbound
 
         Task<User?> FindByUserNameAndDeletedAtIsNull(string userName);
 
-        Task<bool> Save(User user);
+        Task Add(User user);
     }
 }
