@@ -25,5 +25,18 @@ pipeline {
                 bat 'dotnet publish IncuSmart.App\\IncuSmart.App.csproj -c Release -o publish'
             }
         }
+	stage('Deploy') {
+    		steps {
+        		bat '''
+        		%windir%\\system32\\inetsrv\\appcmd stop apppool /apppool.name:IncuSmartPool
+
+        		rmdir /S /Q C:\\inetpub\\incusmart || echo not exist
+        		mkdir C:\\inetpub\\incusmart
+        		xcopy publish C:\\inetpub\\incusmart /E /I /Y
+
+        		%windir%\\system32\\inetsrv\\appcmd start apppool /apppool.name:IncuSmartPool
+        		'''
+    		}
+	}
     }
 }
