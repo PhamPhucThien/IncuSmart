@@ -29,7 +29,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
     - name: Publish
-      run: dotnet publish src/MyApp.Api/MyApp.Api.csproj -c Release -o publish
+      run: dotnet publish IncuSmart.App\IncuSmart.App.csproj -c Release -o publish
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
